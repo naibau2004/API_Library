@@ -62,7 +62,7 @@ public class checkFile_Test
 		useArray.add( "C:\\Java-Test\\Loop_Test\\4.jpg" ) ;
 		useArray.add( "C:\\Java-Test\\Loop_Test\\5.nofile" ) ;
 		useArray.add( "C:\\Java-Test\\Loop_Test\\6.txt" ) ;
-		
+		useArray.add( "C:\\Java-Test\\Loop_Test2\\web" ) ;
 		
 //		多檔案測試是否存在	
 		checkFile a = new check_file_haveloop_useArray( useArray ) ;

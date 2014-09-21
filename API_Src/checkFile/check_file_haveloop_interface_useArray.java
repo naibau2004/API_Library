@@ -62,8 +62,13 @@ public class check_file_haveloop_interface_useArray implements check_file_havelo
 			
 			if ( ! file.exists() )
 			{
+				
 				return_path_list.add( array_list.get(i) ) ;
-			}			
+				
+			}else if ( file.exists () && ! file.isFile() )
+			{
+				return_path_list.add( array_list.get(i) ) ;
+			}
 		}
 				
 		return return_path_list ;

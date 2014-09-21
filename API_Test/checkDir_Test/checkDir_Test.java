@@ -61,6 +61,7 @@ public class checkDir_Test
 		useArray.add( "C:\\Java-Test\\Loop_Test2\\src" ) ;
 		useArray.add( "C:\\Java-Test\\Loop_Test2\\web" ) ;
 		useArray.add( "C:\\Java-Test\\Loop_Test2\\nofile" ) ;
+		useArray.add( "C:\\Java-Test\\Loop_Test\\4.jpg" ) ;
 		
 		
 //		多資料夾測試是否存在	

@@ -19,7 +19,7 @@ public class check_file_haveloop_useArray extends check_file_haveloop
 		super( path ) ;
 		
 //		這邊指定父類別的參考變數「useCheck」他的實際類型是「check_file_haveloop_interface_useFile()」
-		useCheck = new check_file_haveloop_interface_useFile ( path ) ;
+		useCheck = new check_file_haveloop_interface_useFile () ;
 	}
 	
 }

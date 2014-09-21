@@ -54,7 +54,7 @@ public abstract class checkFile
 	
 	
 //	下列為實際在應用的各種方法
-	public ArrayList<String> get_all()			//取得所有路徑下檔案清單
+	public ArrayList<String> get_all()				//取得所有路徑下檔案清單
 	{
 		return useCheck.get_all();
 	}
@@ -64,17 +64,17 @@ public abstract class checkFile
 		return useCheck.get_boolean();
 	}
 	
-	public ArrayList<String> get_exist()		//取得存在之檔案清單
+	public ArrayList<String> get_exist()			//取得存在之檔案清單
 	{
 		return useCheck.get_exist();
 	}
 	
-	public ArrayList<String> get_noexist()		//取得不存在之檔案清單
+	public ArrayList<String> get_noexist()			//取得不存在之檔案清單
 	{
 		return useCheck.get_noexist();
 	}
 	
-	public boolean get_noloop_boolean ()		//單一檔案測試
+	public boolean get_noloop_boolean ()			//單一檔案測試
 	{
 		return use_noloop_check.get_boolean() ;
 	}

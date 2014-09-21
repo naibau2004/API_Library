@@ -3,21 +3,15 @@ package checkFile;
 import java.io.File;
 import java.util.ArrayList;
 
-public class check_file_haveloop_interface_useFile extends check_file_haveloop implements check_file_haveloop_interface
+public class check_file_haveloop_interface_useFile implements check_file_haveloop_interface
 {
-
-	check_file_haveloop_interface_useFile(String path) 
-	{
-		super(path);
-		// TODO Auto-generated constructor stub
-	}
 
 
 	@Override
 	public ArrayList<Boolean> get_boolean() 
 	{
 //		這兩個ArrayList一定要放在這個方法裡面，否則會有不正常的值增加
-		ArrayList<String> check_list = super.open_file();
+		ArrayList<String> check_list = check_file_haveloop.open_file();
 		ArrayList<Boolean> return_boolean_list = new ArrayList<Boolean>() ;
 		
 //		這邊將是否存在的結果塞入「return_boolean_list」的ArrayList中
@@ -42,23 +36,46 @@ public class check_file_haveloop_interface_useFile extends check_file_haveloop i
 	@Override
 	public ArrayList<String> get_exist() 
 	{
-		ArrayList<String> check_list = new ArrayList<String>() ;
-		return check_list ;
+		ArrayList<String> check_list = check_file_haveloop.open_file() ;
+		ArrayList<String> return_path_list = new ArrayList<String>() ;
+		
+		for ( int i = 0 ; i < check_list.size() ; i++ )
+		{
+			File file = new File ( check_list.get(i) ) ;
+			if ( file.exists() )
+			{
+				return_path_list.add( check_list.get(i) ) ;
+			}
+		}
+		
+		return return_path_list ;		
 	}
-
+		
 	
 	@Override
 	public ArrayList<String> get_noexist() 
 	{
-		ArrayList<String> check_list = new ArrayList<String>() ;
-		return check_list ;
+		ArrayList<String> check_list = check_file_haveloop.open_file() ;
+		ArrayList<String> return_path_list = new ArrayList<String>() ;
+		
+		for ( int i = 0 ; i < check_list.size() ; i++ )
+		{
+			File file = new File ( check_list.get(i) ) ;
+			if ( ! file.exists() )
+			{
+				return_path_list.add( check_list.get(i) ) ;
+			}		
+		}
+		
+		
+		return return_path_list ;
 	}
 
 
 	@Override
 	public ArrayList<String> get_all() 
 	{
-		ArrayList<String> all_list = super.open_file() ;
+		ArrayList<String> all_list = check_file_haveloop.open_file() ;
 		return all_list ;
 	}
 	

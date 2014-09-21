@@ -54,7 +54,7 @@ public class checkFile_Test
 		System.out.println ( "-----------------------------" ) ;	
 		
 		
-//		多檔案測試是否存在
+//		Array的應用
 		ArrayList<String> useArray = new ArrayList () ;		
 		useArray.add( "C:\\Java-Test\\Loop_Test\\1.txt" ) ;
 		useArray.add( "C:\\Java-Test\\Loop_Test\\2.config" ) ;
@@ -63,6 +63,8 @@ public class checkFile_Test
 		useArray.add( "C:\\Java-Test\\Loop_Test\\5.nofile" ) ;
 		useArray.add( "C:\\Java-Test\\Loop_Test\\6.txt" ) ;
 		
+		
+//		多檔案測試是否存在	
 		checkFile a = new check_file_haveloop_useArray( useArray ) ;
 		for ( int i = 0 ; i < a.get_all().size() ; i++ )
 		{

@@ -1,6 +1,8 @@
 package checkFile_Test;
 
-import checkFile.* ;
+import checkFile.checkFile ;
+import checkFile.check_file_haveloop_useFile;
+import checkFile.check_file_noloop;
 
 
 public class checkFile_Test 

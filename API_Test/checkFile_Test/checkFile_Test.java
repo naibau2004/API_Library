@@ -49,9 +49,6 @@ public class checkFile_Test
 //		c.get_noexist();	使用非file_noloop的Method會產生錯誤
 //		c.get_boolean();	使用非file_noloop的Method會產生錯誤		
 		
-		
-
-
 	}
 
 }

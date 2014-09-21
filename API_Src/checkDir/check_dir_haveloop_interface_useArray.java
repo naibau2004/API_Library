@@ -1,14 +1,14 @@
-package checkFile;
+package checkDir;
 
 import java.io.File;
 import java.util.ArrayList;
 
-public class check_file_haveloop_interface_useArray implements check_file_haveloop_interface
+public class check_dir_haveloop_interface_useArray implements check_dir_haveloop_interface
 {	
 	@Override
-	public ArrayList<Boolean> get_boolean() 
+	public ArrayList<Boolean> get_boolean()
 	{
-		ArrayList<String> array_list = checkFile.getArray() ;
+		ArrayList<String> array_list = checkDir.getArray() ;
 		ArrayList<Boolean> return_boolean_list = new ArrayList<Boolean>() ;
 		
 		for ( int i = 0 ; i < array_list.size() ; i++ )
@@ -16,7 +16,7 @@ public class check_file_haveloop_interface_useArray implements check_file_havelo
 			
 			File file = new File ( array_list.get(i) ) ;
 			
-			if ( file.exists() && ! file.isDirectory() )
+			if ( file.exists() && file.isDirectory() )
 			{
 				return_boolean_list.add( true ) ;
 			}
@@ -34,14 +34,14 @@ public class check_file_haveloop_interface_useArray implements check_file_havelo
 	@Override
 	public ArrayList<String> get_exist() 
 	{
-		ArrayList<String> array_list = checkFile.getArray() ;
+		ArrayList<String> array_list = checkDir.getArray() ;
 		ArrayList<String> return_path_list = new ArrayList<String>() ;
 		
 		for ( int i = 0 ; i < array_list.size() ; i++ )
 		{
 			File file = new File ( array_list.get(i) ) ;
 			
-			if ( file.exists() && ! file.isDirectory() )
+			if ( file.exists() && file.isDirectory()  )
 			{
 				return_path_list.add( array_list.get(i) ) ;		
 			}
@@ -53,7 +53,7 @@ public class check_file_haveloop_interface_useArray implements check_file_havelo
 	@Override
 	public ArrayList<String> get_noexist() 
 	{
-		ArrayList<String> array_list = checkFile.getArray() ;
+		ArrayList<String> array_list = checkDir.getArray() ;
 		ArrayList<String> return_path_list = new ArrayList<String>() ;
 		
 		for ( int i = 0 ; i < array_list.size() ; i++ )
@@ -63,7 +63,11 @@ public class check_file_haveloop_interface_useArray implements check_file_havelo
 			if ( ! file.exists() )
 			{
 				return_path_list.add( array_list.get(i) ) ;
-			}			
+			}
+			else if  ( file.exists() && ! file.isDirectory() )
+			{
+				return_path_list.add( array_list.get(i) ) ;
+			}
 		}
 				
 		return return_path_list ;
@@ -74,6 +78,6 @@ public class check_file_haveloop_interface_useArray implements check_file_havelo
 	public ArrayList<String> get_all() 
 	{
 //		這邊可以直接將原本做為引數的ArrayList回傳
-		return checkFile.getArray() ;
+		return checkDir.getArray() ;
 	}
 }

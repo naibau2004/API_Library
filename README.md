@@ -1,7 +1,7 @@
 API_Library
 ===========
 
-API_Src is many source code to be the package .
+API_Src is many source code in the package .
 
 API_Test is the example to use the API_Libery.  
 

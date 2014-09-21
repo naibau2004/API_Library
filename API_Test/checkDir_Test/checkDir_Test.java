@@ -54,7 +54,7 @@ public class checkDir_Test
 		
 		
 //		Array的應用
-		ArrayList<String> useArray = new ArrayList () ;		
+		ArrayList<String> useArray = new ArrayList<String> () ;		
 		useArray.add( "C:\\Java-Test\\Loop_Test2\\bin" ) ;
 		useArray.add( "C:\\Java-Test\\Loop_Test2\\log" ) ;
 		useArray.add( "C:\\Java-Test\\Loop_Test2\\main" ) ;

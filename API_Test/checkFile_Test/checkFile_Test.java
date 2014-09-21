@@ -55,7 +55,7 @@ public class checkFile_Test
 		
 		
 //		Array的應用
-		ArrayList<String> useArray = new ArrayList () ;		
+		ArrayList<String> useArray = new ArrayList<String> () ;		
 		useArray.add( "C:\\Java-Test\\Loop_Test\\1.txt" ) ;
 		useArray.add( "C:\\Java-Test\\Loop_Test\\2.config" ) ;
 		useArray.add( "C:\\Java-Test\\Loop_Test\\3.tgz" ) ;

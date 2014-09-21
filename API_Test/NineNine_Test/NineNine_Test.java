@@ -1,9 +1,8 @@
-package NineNine;
+package NineNine_Test;
 
-//NineNine		九九乘法表
-
-public class NineNine 
+public class NineNine_Test 
 {
+	//NineNine_Test		九九乘法表
 	public static void main ( String [] args )
 	{
 		for ( int j = 1 ; j <= 9 ; j++ )		//for ( int y = 1 ; y < 10 ; y++ )

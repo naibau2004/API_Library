@@ -1,4 +1,6 @@
-package myRandomNum;
+package myRandomNum_Test;
+
+import myRandomNum.myRandomNum;
 
 public class myRandomNum_Test {
 

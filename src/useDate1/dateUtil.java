@@ -1,19 +1,19 @@
-package testDate;
+package useDate1;
 
 //testDate		產生今日日期字串
 
 import java.util.Calendar;
 
-public class dateUtil 
+public class dateUtil
 {
 	private static Calendar cal = Calendar.getInstance() ;
 	
-	static int yearUtil ()
+	public int yearUtil ()
 	{
 		return cal.get( Calendar.YEAR ) ;
 	}
 	
-	static int monthUtil ()
+	public int monthUtil ()
 	{
 		int thisMonth = cal.get(Calendar.MONTH ) ;
 		thisMonth += 1 ;
@@ -21,12 +21,14 @@ public class dateUtil
 		return thisMonth ;
 	}
 	
-	static int dayUtil ()
+	public int dayUtil ()
 	{
 		return cal.get(Calendar.DAY_OF_MONTH) ;
 	}
 
+	public  String today( String a)		
+	{
+		return yearUtil() + a + monthUtil() + a + dayUtil() ;
+	}
 	
-
-
 }

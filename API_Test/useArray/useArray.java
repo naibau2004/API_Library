@@ -1,9 +1,7 @@
-package Array_Test;
+package useArray;
 
-//Array_Test	將陣列讀出後列印
-
-public class Array_Test {
-
+public class useArray 
+{
 	public static void main ( String [] args )
 	{
 		

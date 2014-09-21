@@ -7,6 +7,7 @@ public abstract class checkFile
 //	建立參考變數「useCheck」，參考類型為「check_file_haveloop_interface」
 	check_file_haveloop_interface useCheck ;
 	
+	
 //	建立參考變數「use_noloop_check」，參考類型為「check_file_noloop_interface」
 	check_file_noloop_interface use_noloop_check ;	
 	

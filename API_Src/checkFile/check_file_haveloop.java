@@ -6,22 +6,23 @@ import java.util.ArrayList;
 
 abstract class check_file_haveloop extends checkFile
 {
+
+	check_file_haveloop( String path ) 
+	{
+		super( path ) ;
+	}
 	
 	check_file_haveloop( ArrayList<String> array_path ) 
 	{
 		super( array_path ) ;
 	}
 	
-	check_file_haveloop( String path ) 
-	{
-		super( path ) ;
-	}
 
-	
-	
+
 	static ArrayList<String> open_file ()
 	{
 		ArrayList<String> check_list = new ArrayList<String>() ;
+		
 		try
 		{
 //			標準開啟檔案的程式碼

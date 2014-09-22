@@ -15,3 +15,4 @@ API_Test is the example to use the API_Libery.
 
 //useDate1 產生今日時間字串
   
+//mail 寄送mail (Simple)

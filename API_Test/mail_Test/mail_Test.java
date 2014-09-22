@@ -1,7 +1,7 @@
 package mail_Test;
 
+// 需要下載「javamail」的API，將mail.jar匯入
 import java.util.Properties;
-
 import javax.mail.Message;
 import javax.mail.Session;
 import javax.mail.Transport;

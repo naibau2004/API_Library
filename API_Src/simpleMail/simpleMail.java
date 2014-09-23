@@ -1,15 +1,10 @@
 package simpleMail;
 
-
-import java.util.Properties;
-
 //在程式撰寫之前要將「javamail」裡面的「mail.jar」放進lib裡面
-
-
-
-import javax.mail.* ;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
+	import java.util.Properties;
+	import javax.mail.* ;
+	import javax.mail.internet.InternetAddress;
+	import javax.mail.internet.MimeMessage;
 
 public class simpleMail 
 {
@@ -41,10 +36,10 @@ public class simpleMail
 			MailMessage.setRecipient(Message.RecipientType.TO, new InternetAddress(to) ) ;
 			
 //			設定郵件標題
-			MailMessage.setSubject( "Java測試信使用" ) ;
+			MailMessage.setSubject( "Test 測試 测试 テスト のテスト 実験 테스트 !@#$%^&*()_+" ) ;
 			
 //			設定郵件內文，使用setText只能存在一個
-			MailMessage.setText ( "前面的.setText只能存在一個\n" + "如果後面又增加setText的話\n" + "前面的這個setText會被蓋掉\n" ); 
+			MailMessage.setText ( "Test 測試 测试 テスト のテスト 実験 테스트 !@#$%^&*()_+" ); 
 					
 //			傳送
 			Transport.send( MailMessage );		
@@ -57,5 +52,4 @@ public class simpleMail
 			System.out.println ( e.getMessage() ) ;
 		}
 	}
-
 }

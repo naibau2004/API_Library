@@ -38,7 +38,7 @@ public class simpleMail
 //			設定郵件標題
 			MailMessage.setSubject( "Test 測試 测试 テスト のテスト 実験 테스트 !@#$%^&*()_+" ) ;
 			
-//			設定郵件內文，使用setText只能存在一個
+//			設定郵件內文，只能存在一個
 			MailMessage.setText ( "Test 測試 测试 テスト のテスト 実験 테스트 !@#$%^&*()_+" ); 
 					
 //			傳送

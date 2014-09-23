@@ -1,13 +1,13 @@
 package simpleMail;
 
+
 import java.util.Properties;
 
 //在程式撰寫之前要將「javamail」裡面的「mail.jar」放進lib裡面
 
+
+
 import javax.mail.* ;
-import javax.mail.Message;
-import javax.mail.Session;
-import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
@@ -21,8 +21,7 @@ public class simpleMail
 			String host = "172.16.200.27" ;
 			String from = "chichun_yu@syscom.com.tw" ;
 			String to = "chichun_yu@syscom.com.tw" ;
-			
-			
+					
 //			這行不曉得幹啥用的，這行連同下面二行為建立mail連線的標準程式碼
 			Properties props = System.getProperties() ;
 			
@@ -44,12 +43,11 @@ public class simpleMail
 //			設定郵件標題
 			MailMessage.setSubject( "Java測試信使用" ) ;
 			
-//			設定郵件內文
-			MailMessage.setText( "這是一個測試信abc123!@#$%^&*" ) ;
-			
+//			設定郵件內文，使用setText只能存在一個
+			MailMessage.setText ( "前面的.setText只能存在一個\n" + "如果後面又增加setText的話\n" + "前面的這個setText會被蓋掉\n" ); 
+					
 //			傳送
-			Transport.send( MailMessage );
-			
+			Transport.send( MailMessage );		
 			
 //			成功後顯示傳送成功
 			System.out.println ("Mail was sent successfully !\n" ) ;

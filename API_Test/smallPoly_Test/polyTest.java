@@ -10,8 +10,9 @@ public class polyTest
 	{
 		father_class a = new child1 () ;	
 		a.getMethod();
-		
+
 		father_class b = new child2 () ;
-		b.getMethod();	
+		b.getMethod();
+
 	}
 }

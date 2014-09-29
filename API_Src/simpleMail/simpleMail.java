@@ -35,6 +35,9 @@ public class simpleMail
 //			設定收件者email
 			MailMessage.setRecipient(Message.RecipientType.TO, new InternetAddress(to) ) ;
 			
+//			多個收件者mail
+//			MailMessage.setRecipients(Message.RecipientType.TO, InternetAddress.parse("chichun_yu@syscom.com.tw,naibau2004@gmail.com"));
+			
 //			設定郵件標題
 			MailMessage.setSubject( "Test 測試 测试 テスト のテスト 実験 테스트 !@#$%^&*()_+" ) ;
 			

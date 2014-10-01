@@ -5,8 +5,6 @@ import java.util.ArrayList;
 
 public class check_file_haveloop_interface_useFile implements check_file_haveloop_interface
 {
-
-
 	@Override
 	public ArrayList<Boolean> get_boolean() 
 	{

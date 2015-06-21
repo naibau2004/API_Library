@@ -7,7 +7,13 @@ public abstract class Animal {
 	public double weight ;
 	
 	//建立一個參考型別為Machine的成員
-	public Machine ma ;
+	private Machine ma ;
 	
 	public abstract void bark ();
+	
+	public void light (){
+		ma.light();
+	}
+	
+	
 }

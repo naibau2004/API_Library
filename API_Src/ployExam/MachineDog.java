@@ -1,6 +1,6 @@
 package ployExam;
 
-public class MachineDog implements Machine {
+public class MachineDog extends Animal implements Machine {
 
 	@Override
 	public void bark() {

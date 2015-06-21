@@ -6,10 +6,16 @@ public class TestAnimal {
 		
 		Animal d = new Dog () ;
 		d.bark();
-		
-		//可以同時使用Dog與MachineDog的方法
-		d.ma.bark();
-		d.ma.light();
 
+
+		Animal x = new MachineDog () ;
+		x.bark();
+		x.light();
+		
+		
+		Animal c = new MachineCat () ;
+		c.bark();
+		c.light();
+		
 	}
 }
